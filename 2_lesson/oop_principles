@@ -1,0 +1,35 @@
+# Наслдедование
+
+
+class Car(object):
+    color = ""
+    weight = 0
+    __newvar = "protected"
+
+
+    def __init__(self, color, weight):
+        self.color = color
+        self.weight = weight
+
+    def set_something(self):
+        print("Def from class Car!")
+
+
+class BMW(Car):
+    isM_model = False
+
+    def set_something(self, isM_model):
+        self.isM_model = isM_model
+        print("Def from class BMW")
+
+
+class Mercedes(Car):
+    speed = 0
+
+
+x3 = BMW("black", weight=2700)
+print(x3.color, x3.weight)
+
+m3 = BMW("blue", weight=3100)
+m3.set_something(True)
+print(m3.color, m3.weight, m3.isM_model)

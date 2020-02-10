@@ -1,0 +1,15 @@
+# Home Task 1 - Antonov Vitalii
+
+str_list = [["some", "special"], ["text", "for", "you"], ["-", 50]]
+
+new_str = []
+
+for i in str_list:
+    for j in i:
+        if isinstance(j, str):
+            new_str.append(j)
+        else:
+            new_str.append(str(j))
+
+
+print(" ".join(new_str))

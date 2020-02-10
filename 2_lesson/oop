@@ -1,0 +1,39 @@
+class User(object):
+    # name = ""
+    # surname = ""
+    # age = 0
+    # email = ""
+
+    def __init__(self, name, surname, age, email):
+        print("Constructor")
+        self.name = name
+        self.surname = surname
+        self.age = age
+        self.email = email
+
+    @staticmethod
+    def set():
+        print("Всенда буду выводить одно и тоже")
+
+    def print_all(self):
+        print("User: {} {}, Age: {}, Email: {} ".format(self.name, self.surname, self.age, self.email))
+
+
+# admin = User()
+# admin.name = "Admin"
+# admin.age = 21
+# admin.email = "admin@itproger.com"
+
+# admin.set()
+# print(admin.name)
+# admin.print_all()
+# print("Id static method: ", id(admin.set()))
+
+# bob = User()
+# bob.name = "Bob"
+# print(bob.name)
+# bob.set()
+# print("Id static method: ", id(bob.set()))
+
+my_user = User("Vitalii", "Antonov", 27, "Duk1e@du1le.co")
+my_user.print_all()
