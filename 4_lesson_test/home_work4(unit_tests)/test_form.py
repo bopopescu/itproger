@@ -9,12 +9,15 @@ class TestForm(object):
     # В обьект при создании передайте два параметра: login , password
     form_obj = form.Form("admin", "admin_pass")
 
-    # Создайте функцию, что протестирует, можем ли мы создать обект на основе класа форм,
-    # при этом передав в него 2 парамтра
+    # Функция, что протестирует, объект передав в него 2 параметра
     @pytest.mark.fast
     def test_init2(self):
         assert self.form_obj.login == "admin"
         assert self.form_obj.password == "admin_pass"
+
+        form0 = form.Form()
+        assert form0.login == "bot"
+        assert form0.password == "qwerty"
 
         form1 = form.Form("admin", "qwerty")
         assert form1.login == "admin"
@@ -30,8 +33,7 @@ class TestForm(object):
         assert type(form3.age) is int
         assert form3.age == 21
 
-    # Создайте функцию, что протестирует, можем ли мы создать обьект на основе класса форм
-    # при этом передав в него 4 параметра
+    # Функция, что протестирует, объект передав в него 4 параметра
     @pytest.mark.parametrize("test_login, test_password, test_age, test_gender", [
         ("alex234", "my_pass", 32, "m"),
         ("boba", "123", 25, "m"),
@@ -52,12 +54,13 @@ class TestForm(object):
     # в переменную url в классе форм
     @pytest.mark.slow
     def test_url(self):
-        self.form_obj.url = "http://yandex.ru"   # "http://google.com"  # "yande.dasdqwewqd"  # "http:yandex.ru" , yande.dasdqwewqd
+        self.form_obj.url = "http://yandex.ru"  # "http://google.com"  # "yande.dasdqwewqd"  # "http:yandex.ru"
         resp = requests.get(self.form_obj.url)
         assert str(resp) == "<Response [200]>"
+        assert resp.status_code == 200
 
 
-# На основе класса с тестами реалузуйте класс Form и проведите тестирование.
-# Добейтесь того,чтобы все тесты заканчивались успешно.
 if __name__ == "__main__":
     unittest.main()
+
+# pytest test_form.py -v
