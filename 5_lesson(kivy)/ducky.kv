@@ -1,42 +1,89 @@
-<Containers>:
+<MyOwnLabel@MDLabel>:
+    font_size: '25sp'
+    haling: 'left'
+    valing: 'middle'
+    text_size: self.size
+
+
+<Container>:
     rows: 3
+    text_input: text_input
+    label_hours: label_hours
+    label_minutes: label_minutes
+    label_seconds: label_seconds
+    label_mseconds: label_mseconds
+    label_weeks: label_weeks
 
     AnchorLayout:
         anchor_y: 'top'
+        size_hint: 1, 0.15
+        padding: 30
 
-        TextInput:
-            text: 'some text'
+        MDTextField:
+            text: ''
+            id: text_input
+            font_size: '45sp'
+            input_filter: 'int'
+            input_type: 'number'
+            mutliline: False
+            hint_text: 'Введите число'
 
     GridLayout:
         cols: 2
-
-
-        BoxLayout:
-            orientation: 'vertical'
-
-            Label:
-                text: "#1"
-                font_size: "25sp"
-            Label:
-                text: "#2"
-                font_size: "25sp"
-            Label:
-                text: "#3"
-                font_size: "25sp"
-
+        padding: [40, 0, 0, 0]
 
         BoxLayout:
             orientation: 'vertical'
 
-            Label:
-                text: "#1"
-                font_size: "25sp"
-            Label:
-                text: "#2"
-                font_size: "25sp"
-            Label:
-                text: "#3"
-                font_size: "25sp"
+            MyOwnLabel:
+                text: 'Часы'
+
+            MyOwnLabel:
+                text: 'Минуты'
+
+            MyOwnLabel:
+                text: 'Секунды'
+
+            MyOwnLabel:
+                text: 'Милисекунды'
+
+
+            MyOwnLabel:
+                text: 'Недели'
+
+
+
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: 0.5, 1
+
+            MyOwnLabel:
+                text: '0'
+                id:label_hours
+
+            MyOwnLabel:
+                text: '0'
+                id:label_minutes
+
+            MyOwnLabel:
+                text: '0'
+                id:label_seconds
+
+            MyOwnLabel:
+                text: '0'
+                id:label_mseconds
+
+            MyOwnLabel:
+                text: '0'
+                id:label_weeks
+
     BoxLayout:
-        Button:
+        size_hint: 0.9, 0.15
+        padding: [30, 20, 30, 20]
+        font_size: '25sp'
+
+        MDRaisedButton:
             text: "Погнали"
+            size_hint: 1, 0.9
+            on_release:
+                root.convert()
