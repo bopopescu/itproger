@@ -15,7 +15,7 @@ class Container(BoxLayout):
 
     number = 0
     buffer = 0
-    zero_have = False
+    zero_have = True
     sign = ""
 
     # Проверка ввода  - количесво значений введенных в TextInput не может быть больше 10  - 1234567890
@@ -62,18 +62,25 @@ class Container(BoxLayout):
     # Ввод точки для чисел
     def decimal_sign(self):
         if len(self.get_input.text) != 0 and '.' not in self.get_input.text:
-            self.get_input.text += "."
+                self.get_input.text += "."
         else:
             self.get_input.text = self.get_input.text
 
     # Добавлена возможность ввести ноль после  - "." например число 0.001234
+    # и добавления ноля в число на промер 1000, 2500, 8000
     def enter_zero(self, text):
-        self.get_input.text = '0'
-        if self.get_input.text[0] == '0':
-            print("ноьл туту")
-            print(self.get_input.text)
-        elif self.get_input.text[0] and self.get_input.text[1] == ".":
-            print("работал этот участо",self.get_input.text)
+        if '0' in self.get_input.text:
+            try:
+                if self.get_input.text[0] == "0" and self.get_input.text[1] is None:
+                    self.decimal_sign()
+                else:
+                    # "добавляю везде ноль"
+                    self.get_input.text += "0"
+            except Exception:
+                self.get_input.text = "0"
+        else:
+            self.get_input.text += "0"
+
 
 class CalculatorApp(MDApp):
     title = "Calculator"
