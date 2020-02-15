@@ -75,7 +75,8 @@ class Container(BoxLayout):
                     self.decimal_sign()
                 else:
                     # "добавляю везде ноль"
-                    self.get_input.text += "0"
+                    if len(self.get_input.text) < 9:
+                        self.get_input.text += "0"
             except Exception:
                 self.get_input.text = "0"
         else:
