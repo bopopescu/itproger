@@ -1,0 +1,7 @@
+2- Image Alt Attributes
+
+* Google never read images. Text is how Google
+recognizes an image. To ensure that search
+engines can understand what an image is about,
+you must be sure to use proper image names. So
+always add image Alt attributes.
