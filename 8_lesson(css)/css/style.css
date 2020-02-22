@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+a {
+	text-decoration: none;
+}
+
+header {
+	width: 100%;
+	background: #F8F8F8;
+	box-shadow: 2px 4px 6px rgba(194, 192, 192, 0.25);
+	padding: 10px 0;
+	float: left;
+}
+
+header .all-header{
+	width: 60%;
+	margin: 0 20%;
+}
+/*
+header .all-header .language{
+	text-align: right;
+	width: 100%
+}
+header .all-header .language a{
+	text-align: right;
+	width: 100%;
+	font-size: 14px;
+	color: #C4C4C4;
+	font-weight: bolder;
+}
+header .all-header .language a.active{
+		color: #000;
+		border-bottom: 2px solid #000;
+		margin-left: 5px;
+	}
+header .all-header .language a:hover {
+		color: #000;
+		border-bottom: 2px solid #000;
+		margin-left: 5px;
+}
+*/
