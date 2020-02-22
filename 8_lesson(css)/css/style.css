@@ -1,0 +1,44 @@
+/*body {
+	color: blue;
+}
+p {color: green;
+}
+.heading{
+	color: red
+}
+#block-text{
+	font-style: italic;
+	color: yellow;
+}
+#block-text2{
+	color: gray;
+}
+h1.heading{
+	color: black;
+}
+
+div#block-text .heading{
+	color: red;
+}
+p, .heading, #block-text2{
+	color: gray;
+}
+*/
+
+p.txt em + b{
+	color: red;
+}
+
+
+.bold{
+	font-weight: bold;
+}
+
+p.txt.bold{
+	color: blue
+}
+
+ul > li { /*дочерний элемент*/
+	color: red;
+}
+[target="_self"] {font-weight: bold;}

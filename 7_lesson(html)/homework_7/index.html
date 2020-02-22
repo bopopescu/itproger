@@ -2,41 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HomeWork</title>
 </head>
 <body>
-        <h2 align="center">Мини веб сайт</h2><br>
+
+    <div style="text-align: center">
+        <h2 style="padding-left: 200px">Мини веб сайт</h2>
+    </div>
     <div>
-        <div style="display: inline-block">
-            <img src="img/itproger.jpg"  width="400" height="300" title="asd"><br>
-        </div>
-        <div style="display: inline-block">
-            <strong>Информация про <mark>изображение:</mark></strong><br>
-            <details align="right">
-                <summary>Подробнее</summary>Информация о професcии Front-end.
-            </details><br>
-            <audio controls="">
-                <source src="" type="audio/mp3">Тег аудио не работает в вашем браузере
-            </audio><br>
-        </div>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://itproger.com/intensive/front-end" target="_blank">
+                        <img src="img/itproger.jpg"  width="500" height="350" title="itpoger.com" alt="Профессия Frontend Dev">
+                    </a>
+                </td>
+                <td>
+                    <b>Информация про <mark>изображение:</mark></b><br>
+                    <hr>
+                    <details>
+
+                        <summary>Подробнее</summary>Информация о професcии Front-end.
+                    </details><br>
+                    <audio controls="" style="" >
+                        <source src="audio/start.mp3" type="audio/mpeg">Тег аудио не работает в вашем браузере
+                    </audio><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <iframe width="700" height="450"
+                        src="https://www.youtube.com/watch?v=sjzoCz5lGCA"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                    </td>
+                <td>
+                    <strong style="font-size: larger">Наши преймущества:</strong>
+                    <!--<big><strong>Наши преймущества:</strong></big>-->
+                        <ul>
+                            <li> Крутые <a href="https://itproger.com/courses/paid" target="_blank"><em>цены</em></a>;</li>
+                            <li>Большой выбор;</li>
+                            <li>Хорошие специалисты;</li>
+                        </ul>
+                </td>
+
+            </tr>
+        </table>
     </div>
 
-        <video width="500" height="350" controls="controls">
-            <source src="https://www.youtube.com/watch?v=sjzoCz5lGCA">
-
-
-        </video>
-
-
-            <b>Наши преймущества</b>
-        <ul>
-            <li> Крутые <a href="">цены</a>;</li>
-            <li>Большой выбор;</li>
-            <li>Хорошие специалисты</li>
-        </ul>
-
     <h1>Зарегистрироваться на событие: </h1>
-    <form action="" method="post">
+
+    <form action="someURL" method="post">
 
         <label for="field-name">Имя</label>
         <input type="text" name="name" placeholder="Введите имя" id="field-name"><br>
@@ -47,26 +64,24 @@
         <label for="field-password">Пароль</label>
         <input type="password" name="name" placeholder="Введите пароль" id="field-password"><br>
 
-        <label for="field-phfile">Фото профиля</label>
-        <input type="file" name="name" placeholder="Файл не выбран" id="field-phfile"><br>
+        <label>Фото профиля</label>
+        <input type="file" name="photo" title="Файл не выбран" ><br>
 
         <input type="text" name="name" placeholder="Опыт в программир" disabled><br>
 
-        <select name="language[]">
+        <select name="language">
             <option selected disabled>Любимый язык:</option>
-            <option name="php">PHP</option>
-            <option name="js">JavaScript</option>
-            <option name="c#">C#</option>
+            <option id="php">PHP</option>
+            <option id="js">JavaScript</option>
+            <option id="c#">C#</option>
         </select><br>
 
-        <input type="checkbox" name="user-agree" placeholder="Файл не выбран" id="field-useragree">
-        <label for="field-useragree"><big>Пользовательское соглашение</big></label><br>
+        <input type="checkbox" id="field-useragree">
+        <label for="field-useragree"><strong>Пользовательское соглашение</strong></label><br>
 
         <button type="submit" name="button">Отправить</button>
 
         <input type="reset" name="button" value="Очистить">
-
     </form>
-
 </body>
 </html>

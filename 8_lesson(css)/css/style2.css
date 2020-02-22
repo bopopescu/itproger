@@ -1,0 +1,17 @@
+p {
+	color: rgba(255,0,0,0.5);
+	font-weight: bold;
+	font-style: oblique;
+	font-size: 2.2rem;
+	font-family: 'Arial', sans-serif;
+	letter-spacing: -2px;
+	line-height: 120%;
+	text-align: justify;
+	text-decoration: underline;
+	text-decoration-color: black;
+	text-transform: capitalize;
+	text-indent: 50px;
+	word-spacing: 5px;
+	/*word-wrap: break-word;*/
+	word-break: break-all;
+}

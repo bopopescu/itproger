@@ -1,0 +1,68 @@
+/*#block :last-child{
+	color: red
+}
+*/
+body :first-child::first-letter { color: red; }
+
+body :first-child::first-line { color: green; }
+
+.after-before:after {
+	content: ">>>>>>>";
+	color: gold;
+}
+
+.after-before:before{
+	content: "~~~"
+}
+
+#list li:nth-child(3n) {color: red}
+
+.block p{color:red;}
+
+.block p:only-of-type {color: blue;}
+
+a:link {
+	text-decoration: none;
+
+}
+/*
+a:visited {
+	color: red;
+
+}*/
+a:active{ text-decoration: line-through; }
+
+a:hover {
+	color: #333; 
+	font-weight: bold;}
+
+.block-txt span {color: blue;}
+.block-txt:hover span {color: red;}
+.block-txt:acive span {color: green;}
+
+p:empty { 
+	background-color: black;
+	height:10px;
+}
+
+p:not(:empty) { 
+	background-color: #3333;
+	height:15px;
+}
+
+p:not(.txt):not(.txt-block) {
+	font-size: 25px;
+}
+
+
+
+p:not(.txt):not(.txt-block):hover{color: red}
+
+input[type]:not([type='text']):not(:focus) {background-color: red}
+
+input:focus {background-color: blue; }
+
+input[type]:not([type='text']):enabled {background-color: green; }
+
+input:disabled {background-color: black; }
+
