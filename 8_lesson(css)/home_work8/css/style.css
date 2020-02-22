@@ -12,7 +12,8 @@ a {
 	color: white;
 }
 body {
-	background: clear;
+	width:100%;
+	overflow-x:  hidden;
 }
 header{
 	width:100%;
@@ -20,9 +21,8 @@ header{
 	background: #3D3D3D;
 
 }
-
 header .all-header{
-	width: 90%;
+	width: 80%;
 	margin: 20px 10%;
 	display: inline-block;
 }
@@ -131,13 +131,42 @@ footer {
 
 
 footer .top-footer{
-	font-size: 40px;
+	font-size: 30px;
 	color: white;
-	padding: 5px;
+	padding: 10px;
+
+
 }
 
-footer .center-footer{
+footer .center-footer input{
+	height: 40px;
+	text-decoration: none;
+	border: 0;
+	border-radius: 5px;
+	color: white;
+	display: inline-block;
+	font-size:16px;
+	padding: 5px;
+	margin: 0 auto;
+	margin-top: 10px;
+	position: relative;
+	margin-right: 50px;
+}
 
+footer .center-footer .youtube-btn{
+	background-color:#DC7777;
+	margin-left: 50px;
+}
+
+footer .center-footer .twitter-btn{
+	background-color: #78B5DC;
+}
+
+footer .center-footer .facebook-btn{
+	background-color: #6A71A9;
+}
+footer .center-footer .instagram-btn{
+	background: #A9886A;
 }
 
 footer .down-footer{
