@@ -1,0 +1,25 @@
+
+p { color: blue!important; }
+
+p { color: red;}
+
+p > span {
+	color: initial; /*значение по умолчинию */
+
+}
+
+.block {
+	background-color: #ccc;
+	padding: 20px;
+	margin: 10px;
+}
+
+.block  > p {
+	background-color: #eee;
+	padding: inherit; /* из класса родителей */
+	margin: unset; /* если есть в родетеле то с родителяб  а если нет то по умолчинию*/
+}
+/*
+p, .block {
+	all: inherit;
+}*/

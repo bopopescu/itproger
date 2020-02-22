@@ -1,0 +1,17 @@
+@font-face {
+	font-family: Montserrat-Black;
+	src: url("../fonts/Montserrat-Black.ttf");
+}
+/*
+p.txt {
+	font-family: Montserrat-Black;
+}
+*/
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap&subset=cyrillic');
+</style> 
+
+p.txt {
+	font-family: 'Montserrat', ;
+	font-weight: 700;
+}

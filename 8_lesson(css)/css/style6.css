@@ -1,0 +1,25 @@
+.block {
+	width: 200px;
+	height: 200px;
+
+}
+
+#first {
+	background-color: silver;
+	z-index: 2;
+	position: relative;
+}
+
+#second {
+	background-color: red;
+	position: relative;
+	top: -100px;
+	left: 60px;
+	z-index: 1;
+}
+#third {
+	background-color: blue;
+	position: relative;
+	top: -250px;
+	z-index: 5;
+}
