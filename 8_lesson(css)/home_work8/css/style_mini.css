@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a { text-decoration: none;}
+body{ height: 2000px;}
+/*---------Header----------*/
+header {
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	text-align: center;
+	position: fixed;
+}
+header .all-header {
+	padding-top:40px;
+	word-spacing:200px;
+	font-size: 20px;
+}
+header .all-header .menu a{
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+}
+header .all-header .menu a:hover{
+	background-color: black;
+	color: white;
+}
+/*----------Main-----------*/
+main {
+	width: 100%;
+	height: 90%;
+	background-color: #CCCCCC;
+	display: block;
+}
+main .all-main{
+	padding-top: 100px;
+}
+main .all-main img{
+	padding-top: 100px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}

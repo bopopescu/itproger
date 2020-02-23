@@ -1,11 +1,20 @@
+/*------Ошибка подключения онлайн Гугл шрифтов в Китае------*/
 @font-face {
-	font-family: Roboto;
-	src: url("../fonts/roboto.ttf");
+	font-family: RobotoLight;
+	src: url("../fonts/roboto-light.ttf");
+}
+@font-face {
+	font-family: RobotoBold;
+	src: url("../fonts/roboto-bold.ttf");
+}
+@font-face {
+	font-family: RobotoMedium;
+	src: url("../fonts/roboto-medium.ttf");
 }
 * {
 	margin:0;
 	padding: 0;
-	font-family: Roboto;
+	font-family: RobotoMedium;
 }	
 a {
 	text-decoration: none;
@@ -15,30 +24,38 @@ body {
 	width:100%;
 	overflow-x:  hidden;
 }
+/*--------Header------------------------------------------*/
 header{
 	width:100%;
-	height:80px;
+	height:100px;
 	background: #3D3D3D;
-
+	float: left;
+	-webkit-box-shadow: 0px 5px 0px 0px rgba(97,93,97,0.87);
+	-moz-box-shadow: 0px 5px 0px 0px rgba(97,93,97,0.87);
+	box-shadow: 0px 5px 0px 0px rgba(97,93,97,0.87);
 }
 header .all-header{
-	width: 80%;
-	margin: 20px 10%;
+	width: 90%;
+	margin: 25px 10%;
 	display: inline-block;
 }
-
+/*-------- Header WebDisign----------*/
+#design {
+	font-size: 30px;
+	font-family: RobotoBold;
+}
 header .all-header .main {
 	width: 20%;
+	margin-top: 5px;
 	text-align: left;
 	display: inline-block;
-	font-size: 30px;
-	font-family: Roboto;
-	font-style: bold;
-	
 }
 header .all-header .main .design{
 	color: #DC7777;
+	font-size: 25px;
+	margin-left: 20px;
 }
+/*--------Header Menu---------------*/
 header .all-header .menu-header {
 	width: 50%;
 	text-align: left;
@@ -46,38 +63,39 @@ header .all-header .menu-header {
 	text-align: center;
 	text-decoration: none;
 	word-spacing: 30px;
-	font-size: 20px;
+	font-size: 23px;
 }
 header .all-header .menu-header .about{
 	word-spacing: 2px;
-}
-header .all-header .search {
-	width: 20%;
-	text-align: left;
-	display: inline-block;
-	text-align: left;
-	margin-left: 40px;
-}
-
-header .all-header .search input{
-	height: 35px;
-	width: 80%;
 }
 header .all-header .menu-header a {
 	text-decoration: none;
 	text-align: center;
 }
-
+header .all-header .menu-header a:hover {color: #ccc;} 
+/*--------Header Search-------------*/
+header .all-header .search {
+	width: 20%;
+	border: 0;
+	text-align: right;
+	display: inline-block;
+	margin-left: 100px;
+}
+header .all-header .search input{
+	height: 35px;
+	width: 90%;
+	text-indent: 10px;
+	border: 0;
+	border-radius: 5px;
+	background: #F5F5F5;
+}
+/*-------------- Main section ----------------------*/
 main {
 	width: 90%;
-	margin: 0 auto;
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin: 50px 10% 50px 10%;
 	display: inline-block;
-
 }
+/*--------Box1---------------*/
 main .box1 {
 	width: 50%;
 	border: 1px solid black;
@@ -86,26 +104,26 @@ main .box1 {
 	float: left;
 	display: inline-block;
 }
-
 main .box1 h2{
 	width: 100%;
+	padding-bottom: 5px;
 	color: #DC7777;
 }
 main .box1 p{
 	width: 100%;
 	text-align: left;
-	font-size: 14px;
+	font-size: 16px;
+	font-family: RobotoLight;
 	padding-bottom: 20px;
 }
 main .box1 img{
-	height: 250px;
+	height: 280px;
 	display: block;
   	margin-left: auto;
   	margin-right: auto;
   	width: 50%;
-
 }
-
+/*--------Box2---------------*/
 main .box2 {
 	width: 20%;
 	font-size: 14px;
@@ -117,27 +135,31 @@ main .box2 {
 }
 main .box2 h3{
 	width: 100%;
+	padding-bottom: 5px;
+	font-size: 20px;
 	color: #DC7777;
 }
-
+main .box2 p{
+	font-family: RobotoLight;}
+/*------------------ Footer ----------------------------*/
 footer {
 	width:100%;
-	height:150px;
+	height:200px;
 	background: #3D3D3D;
 	padding-bottom: 0px;
 	text-align: center;
 	margin: 0 auto;
+	-webkit-box-shadow: 0px -10px 0px 0px rgba(97,93,97,0.87);
+	-moz-box-shadow: 0px -10px 0px 0px rgba(97,93,97,0.87);
+	box-shadow: 0px -10px 0px 0px rgba(97,93,97,0.87)
 }
-
-
+/*--------Top Footer---------------*/
 footer .top-footer{
 	font-size: 30px;
 	color: white;
-	padding: 10px;
-
-
+	padding: 20px;
 }
-
+/*--------Center Footer---------------*/
 footer .center-footer input{
 	height: 40px;
 	text-decoration: none;
@@ -148,28 +170,26 @@ footer .center-footer input{
 	font-size:16px;
 	padding: 5px;
 	margin: 0 auto;
-	margin-top: 10px;
+	margin-top: 20px;
 	position: relative;
 	margin-right: 50px;
 }
-
 footer .center-footer .youtube-btn{
 	background-color:#DC7777;
 	margin-left: 50px;
 }
+footer .center-footer .twitter-btn{ background-color: #78B5DC;}
+footer .center-footer .facebook-btn{ background-color: #6A71A9;}
+footer .center-footer .instagram-btn{ background-color: #A9886A;}
 
-footer .center-footer .twitter-btn{
-	background-color: #78B5DC;
-}
-
-footer .center-footer .facebook-btn{
-	background-color: #6A71A9;
-}
-footer .center-footer .instagram-btn{
-	background: #A9886A;
-}
-
-footer .down-footer{
+/*--------Down Footer---------------*/
+footer .down-footer {
+	height: 40px;
+	width: 100%;
 	text-align: left;
 	color: white;
+}
+footer .down-footer p{
+	margin-top: 10px;
+	margin-left: 40px;
 }
