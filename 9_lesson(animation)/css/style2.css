@@ -1,0 +1,27 @@
+#block {
+	width: 100px;
+	height: 100px;
+	background: silver;
+	animation-name: coolAnimation;
+	animation-duration: 5s;
+	animation-delay: 0.2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
+}
+
+@keyframes coolAnimation{
+	0% {border-radius: 0px;}
+	10% {border-radius: 10px;}
+	40% {border-radius: 20px;}
+	63% {background: yellow;}
+	70% {border-radius: 40px;}
+	100% {border-radius: 3px;}
+}
+
+@keyframes block {
+	from { background: silver;
+			}
+	to {background: red;
+		}
+}

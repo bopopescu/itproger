@@ -12,7 +12,6 @@ header {
 	background: #F8F8F8;
 	box-shadow: 2px 4px 6px rgba(194, 192, 192, 0.25);
 	padding: 10px 0;
-	float: left;
 }
 
 header .all-header{
@@ -43,16 +42,16 @@ header .all-header .language a:hover {
 }
 
 header .all-header .header-main {
-	width: 100%;
+	display: flex;
 	margin-top: 20px;
+	justify-content: space-between;
+	align-items: center;
 }
 header .all-header .header-main img {
 	height: 50px;
-	float: left;
 }
 #search {
-	float: left;
-	margin-left: 10px;
+	
 	border: 0px;
 	background: #ECECEC;
 	width: 360px;
@@ -60,22 +59,18 @@ header .all-header .header-main img {
 	font-size: 12px;
 	text-indent: 20px;
 	outline: none;
-	margin-top: 20px;
 	margin-left: 
 }
 
 header .all-header .header-main a{
-	float: left;
 	color: #000;
 	font-weight: bold;
-	margin-left: 50px;
-	margin-top: 20px;
+
 }
 header .all-header .header-main a:hover { color: #ccc;}
 
 header .all-header .header-main .btn {
 	cursor: pointer;
-	float: right;
 	margin-left: 20px;
 	font-weight: bold;
 	border: 2px solid #000;
@@ -101,12 +96,10 @@ header .all-header .header-main .btn.reg:hover {
 }
 /* -----*/
 main {
-	float: left;
 }
 
 main .section {
 	width: 60%;
-	float: left;
 	margin: 50px 20%;
 	display: inline-block;
 }
@@ -124,8 +117,27 @@ main .section h3 span {
 	width: 30px;
 	background: black;
 }
+
+main .section .flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
 main .sectiom .img-block {
 	width: 25%;
 	margin: 20px 3px 20px 3px;
-	float: left;
+}
+
+
+main .section .img-block:hover .button-play {display: block}
+
+main .section .img-block .button-play {
+	background-color: #000;
+	color: yellow;
+	padding: 25px;
+	position: absolute;
+	right: -30px;
+	bottom: 80px;
+	display: none;
+	transition: 
 }
