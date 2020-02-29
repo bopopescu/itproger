@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+    <link rel="stylesheet" href="css/style(js).css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <a href="#hideObject1" class="btn btn-success" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="hideObject1">Открыть или скрыть объект</a>
+        <button class="btn btn-danger" data-toggle="collapse" data-target="#hideObject2" aria-expanded="false" aria-controls="hideObject2">Открыть или скрыть объект 2</button>
+        <button class="btn btn-warning" data-toggle="collapse" data-target=".multi-objects" aria-expanded="false" aria-controls="hideObject1 hideObject2">Открыть или скрыть все объекты</button>
+
+
+
+        <div class="collapse multi-objects" id="hideObject1">
+            <div class="alert alert-success mt-3"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, incidunt neque harum quam, corrupti dicta id molestiae officiis deleniti possimus.</p></div>
+        </div>
+
+        <div class="collapse multi-objects" id="hideObject2">
+            <div class="alert alert-danger mt-3"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, incidunt neque harum quam, corrupti dicta id molestiae officiis deleniti possimus.</p></div>
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

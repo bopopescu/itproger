@@ -1,0 +1,16 @@
+.block {
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+  margin: 20px;
+}
+.height-max {
+  width: 200px;
+}
+.box {
+  width: 500px;
+  margin: 20px;
+}
+.d-flex > div {
+  width: 200px;
+}

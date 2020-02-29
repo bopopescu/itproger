@@ -1,0 +1,12 @@
+.bg {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.block {
+    border: 1px solid black;
+}
+* {
+  background-color: black;
+}

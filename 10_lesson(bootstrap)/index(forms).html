@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FormsStyleBootstrap</title>
+    <link rel="stylesheet" href="css/style(forms).css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+   <!-- <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="asdasdad"></iframe>
+    </div>-->
+    <form class="main-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-control-plaintext" value="Duk1e">
+            <small class="form-text text-muted">Подсказка для поля выше</small>
+        </div>
+        <div class="form-group">
+            <label for="pass">Password</label>
+            <input type="password" name="pass" class="form-control">
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="radio" name="check-box">
+                    </div>
+                </div>
+                <input type="email" name="pass" class="form-control" placeholder="Введите почту">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-outline-success">Нажми на меня</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Выборка из списка</label>
+            <select class="form-control form-control-sm">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+        <div class="form-group form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="male">
+            <label class="form-check-label">Мужской</label>
+        </div>
+        <div class="form-group form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="male">
+            <label class="form-check-label">Женский</label>
+        </div>
+
+        <button type="button" class="but btn-success">Готово</button>
+    </form>
+
+    <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="check-box-1" disabled>
+        <label for="check-box-1" class="custom-control-label">Красивый переключатель</label>
+    </div>
+
+
+
+</body>
+</html>
