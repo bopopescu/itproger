@@ -1,0 +1,54 @@
+* {
+    background-color: #fafafa;
+    padding:0;
+    margin: 0;
+}
+
+.header {
+  background-color: #484848;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  height: 300px;
+  background: -webkit-linear-gradient(#cb4b4b 0%, #577faa 100%);
+  margin-right: 10px;
+}
+.column:last-of-type {
+  margin-right: 0;
+}
+
+.footer {
+  background-color: #484848;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+
+/*Адаптивность */
+
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .column {
+    margin-right: 0;
+    max-width: 10px;
+  }
+
+  .column:last-of-type {
+    margin-bottom: 0px;
+  }
+}
