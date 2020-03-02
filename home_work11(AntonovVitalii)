@@ -1,0 +1,22 @@
+Инициализируем репозиторий
+    1) git init
+Создаем файл .gitignore
+    2) git status
+    3) git add .
+    4) git commit -m "added gitignore file"
+Создаем ветку Blog
+    5) git branch blog
+    6) git checkout blog
+Создаем папку blog и в ней файлы index.js, index.html
+    7) git status
+    8) git add .
+    9) git commit -m "added blog"
+Переходим на ветку master
+    10) git checkout master
+Подключаем удаленный репозиторий
+    11) git remote add origin https://github.com/duk1edev/itProger_lesson11.git
+    12) git remote
+    13) git push -u origin master
+Создал в ветке мастер README файл
+14) git add .
+15) git commit -m "added readme file"
