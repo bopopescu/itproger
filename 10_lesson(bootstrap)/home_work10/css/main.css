@@ -22,49 +22,79 @@ body {
   background-color: #060606!important;
   opacity: 0.9;
 }
-.item-height {
-  height: 33vh;
-}
-.col-md-12 {
-  text-align: center;
-}
-.jumbotron-2{
-  background-color: #fff!important;
-}
-.jumbotron-2-p{
-  font-size: 22px;
-}
+.btn-search {margin-top: 50px;}
+
+.col-md-12 {text-align: center;}
+
+.jumbotron-2{ background-color: #fff!important;}
+
+.jumbotron-2-p{  font-size: 22px;}
+
 .container-2 {
   margin-top: 65px;
   margin-bottom: 65px;
 }
-.search-button {
-  margin-top: 50px;
-}
-.jumbotron-3{
-  background-color: red!important;
-}
-.jmb-3-p {
-  font-size: 20px;
-}
+.search-button { margin-top: 50px;}
+
+.jumbotron-3{background-color: red!important;}
+
+.jmb-3-p { font-size: 20px;}
+
 .container-3 {
   margin-top: 65px;
   margin-bottom: 65px;
 }
-.jmb-3-h3 {
-   margin-bottom: 80px;
-}
+.jumbotron-3-h { margin-bottom: 80px;}
+
 .jumbotron-4 {
    background-image: url('../imgs/background2.JPG');
    background-size: cover;
    text-align: center!important;
 }
 .container-4 {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
+.btn-4-font-size{
+  margin-top: 40px;
+  font-size: 20px;
+}
+@media screen and (min-width : 320px) and (max-width : 999px){
+  .jumbotron-1-h {
+    font-size: 1.5em;
+  }
+  .jumbotron-1-font-p {
+    font-size:0.75em;
+    transform: scale(1.1, 1.1);
+  }
+  .jumbotron-2-h{
+    font-size: 0.75em;
+    text-align: center;
+    margin-bottom: 20px;
+    transform: scale(1.1, 1.1);
+  }
+  .jumbotron-2-p {
+    text-align: center;
+    font-size: 0.5em;
+    transform: scale(1.1, 1.2);
+    margin: 40px 0px;
+  }
+  .jumbotron-3-h{
+    font-size: 1.3em;
+    margin-bottom: 60px;
+  }
+  .bigger-font { font-size: 0.8em;}
 
+  .jumbotron-3-p {margin-bottom: 50px;}
 
+  .jumbotron-4-h { font-size: 1.5em;}
+
+  .btn-4-font-size {
+    margin-top: 40px;
+    font-size: 0.6em;
+  }
+}
+/*used before ---------------------------------
 @media screen and (min-device-width : 320px) and (max-device-width : 768px)  {
   .container-2 {
     text-align: justify;
@@ -134,3 +164,4 @@ body {
       margin-top: 150px;
   }
 }
+*/
