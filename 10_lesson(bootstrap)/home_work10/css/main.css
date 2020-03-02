@@ -26,9 +26,9 @@ body {
 
 .col-md-12 {text-align: center;}
 
-.jumbotron-2{ background-color: #fff!important;}
+.jumbotron-2 { background-color: #fff!important;}
 
-.jumbotron-2-p{  font-size: 22px;}
+.jumbotron-2-p {  font-size: 22px;}
 
 .container-2 {
   margin-top: 65px;
@@ -36,7 +36,7 @@ body {
 }
 .search-button { margin-top: 50px;}
 
-.jumbotron-3{background-color: red!important;}
+.jumbotron-3 {background-color: red!important;}
 
 .jmb-3-p { font-size: 20px;}
 
@@ -55,7 +55,7 @@ body {
   margin-top: 200px;
   margin-bottom: 200px;
 }
-.btn-4-font-size{
+.btn-4-font-size {
   margin-top: 40px;
   font-size: 20px;
 }
@@ -67,7 +67,7 @@ body {
     font-size:0.75em;
     transform: scale(1.1, 1.1);
   }
-  .jumbotron-2-h{
+  .jumbotron-2-h {
     font-size: 0.75em;
     text-align: center;
     margin-bottom: 20px;
@@ -79,7 +79,7 @@ body {
     transform: scale(1.1, 1.2);
     margin: 40px 0px;
   }
-  .jumbotron-3-h{
+  .jumbotron-3-h {
     font-size: 1.3em;
     margin-bottom: 60px;
   }
