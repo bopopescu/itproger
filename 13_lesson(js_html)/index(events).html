@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>JS+HTML</title>
+</head>
+<body>
+  <a href="#" ondragend="clickHref()" class="href">Нажми на меня</a>
+
+  <p onclick="clickText('p')">Terc</p>
+  <p onclick="clickText('a.href')">Terc 2</p>
+
+  <input type="text" onfocus="focusEvent()" onblur="focusEndEvent()" onmouseover="focusEndEvent()" onmouseout="focusEndEvent()">
+
+  <textarea class="full-text" name="textarea" rows="3" cols="20"></textarea>
+
+  <div class="block">Привет мир</div>
+
+  <script src="js/events.js"></script>
+</body>
+</html>

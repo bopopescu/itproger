@@ -1,0 +1,12 @@
+#tap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background: #333;
+  border-radius: 50%;
+
+  transition: all 200ms linear;/*задержка передвижения*/
+}
