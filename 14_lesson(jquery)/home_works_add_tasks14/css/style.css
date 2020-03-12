@@ -1,0 +1,14 @@
+.btn-3,
+#btn,
+button {
+	padding: 20px;
+	margin: 20px;
+}
+
+.new_style {
+	color: #fff;
+	background: grey;
+	font-size: 1em;
+	width: 90%;
+	padding: 5%;
+}

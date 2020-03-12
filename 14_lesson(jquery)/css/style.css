@@ -1,0 +1,9 @@
+.test {
+  background: silver;
+  border: 2px solid black;
+  padding: 20px;
+}
+#block{
+  width: 100px;
+  background: silver;
+}

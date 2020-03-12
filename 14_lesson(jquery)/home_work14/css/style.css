@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+section {
+  width: 400px;
+  height: 100%;
+  background-color:#FAFAFA;
+  border: 2px solid silver;
+  border-radius: 5px;
+  padding: 30px 30px 80px 30px;
+  margin: 5px;
+}
+section h1 {
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+div > input {
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px 0px;
+  width: 60%;
+  border-radius: 5px;
+  color: #b56767;
+}
+.btn-block {margin: 10px 0px;}
+
+.btn-block button {
+  padding: 15px 25px;
+  border: 2px solid silver;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #b56767;
+  background: #FAFAFC;
+}
+.btn-block .button-show {margin-left: 20px;}
+
+.btn-block > button:hover {
+  background-color: #E99686;
+  color: white;
+}
+#addTask > p {
+  display: none;
+  width: 60%;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #e2e0e0;
+  border: 1px solid silver;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #9b9999;
+}
+#show-task {
+  width: 80%;
+  font-size: 20px;
+  font-weight: bold;
+}
+#show-task p {
+  margin: 10px 0px 5px 10px;
+}

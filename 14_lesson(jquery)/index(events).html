@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Jquery</title>
+</head>
+<body>
+  <button class="send">Made It</button>
+  <div id="block">Test</div>
+  <div id="block2"></div>
+  <p class="txt">1</p>
+  <p class="txt">2</p>
+  <span class="txt">
+    <div class="block">
+      Block inside
+    </div>
+  </span>
+
+  <input type="text" name="" value="">
+  <div class="textShow"></div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!--<script src="js/index.js"></script>-->
+  <script>
+    $(document).ready(function(){
+      console.log("Hello");   
+    });
+
+    $("input").on('keyup', function() {
+      var text = $("input").val();
+      $(".textShow").text(text);
+    });
+
+    // function clickBtn(){
+    //   $("#block").toggle();
+    // }
+    $("button.send").on('click',function(){
+      $("#block").fadeToggle();
+    });
+    //$("button.send").trigger("click");
+    //$("button.send").off("click");
+  </script>
+</body>
+</html>

@@ -16,7 +16,7 @@ getNumber();
 
 // ---------Task2------------------
 window.onresize = function (){
-  alert("Вы узменили ширину или высоту экрана!" + "Ширина: " + window.innerWidth + ". "+"Высота: " + window.innerHeight)
+  alert("Вы узменили ширину или высоту экрана!" + '\n' + "Ширина: " + window.innerWidth + "px" +  '\n' + "Высота: " + window.innerHeight + "px")
   console.log("Ширина: " + window.innerWidth);
   console.log("Высота: " + window.innerHeight);
 }
@@ -41,7 +41,7 @@ pText.onmouseout = function () {
 // ---------Task4------------------
 function getAttributes(){
   let hrefLink = document.querySelector("a");
-  alert("Атрибуты ссылки:" + '\n' + "href = " + hrefLink.type + '\n' +
+  alert("Атрибуты ссылки:" + '\n' + "href = " + hrefLink.href + '\n' +
   "hreflang = " + hrefLink.hreflang + '\n' +
   "rel = " + hrefLink.rel + '\n' +
   "target = " + hrefLink.target + '\n' +
