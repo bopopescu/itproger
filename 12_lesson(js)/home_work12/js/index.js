@@ -42,3 +42,11 @@ var x = new Array(new Array(20, 34, 2), new Array(9, 12, 18), new Array(3, 4, 5)
 console.log(x);
 var minimum = minInArray(x);
 console.log("Минимальное число из массива: " + minimum);
+///
+let cnt = 10;
+let str = "";
+do {
+  str += "lol";
+  cnt--;
+}while(cnt >= 0);
+console.log(str.length);

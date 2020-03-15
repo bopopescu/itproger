@@ -1,0 +1,18 @@
+{% block  main_section %}
+  <h3 class="display-3">Страница с практикой!</h3>
+  {{ hello_text }}
+  <div class="navbar nav">
+    <ul class="row">
+      <li><a href="{% url 'blog-practice' %}">Main</a></li>
+      <li><a href="{% url 'practice-lessons' %}">Lessons</a></li>
+      <li><a href="{% url 'practice-about' %}">About</a></li>
+    </ul>
+
+  </div>
+{% endblock main_section%}
+
+{% if id == 'practice' %}
+	<div class="tasks">
+		Блок .tasks
+	</div>
+{% endif %}

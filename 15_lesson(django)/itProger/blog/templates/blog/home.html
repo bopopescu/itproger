@@ -1,0 +1,28 @@
+{% extends 'blog/main.html'%}
+
+{% block  main_section %}
+    {% for post in news %}
+    <div class="alert alert-light">
+      <h1>{{ post.title }}</h1>
+      <p>{{ post.text }}</p>
+      <span class="text-muted">{{ post.date|date:"j F Y, время: H:i:s" }}</span>
+      {% if post.author != '' %}
+        <p>Автор: <mark>{{ post.author }}</mark></p>
+      {% else %}
+        <p>Автор: <mark>Admin</mark></p>
+      {% endif %}
+    </div>
+    {% endfor %}
+{% endblock main_section%}
+
+
+{% block  aside_news_section %}
+    <h3><b>10 фильмов и сериалов для программистов</b></h3>
+    <img src="https://itproger.com/img/news/1477674462.jpg" alt="" class='img-thumbnail mb-1'>
+    <p>Когда становишься на путь прорамирования оченб хочется посмотреть какие-либо
+      сериалы фильмы или же сериалы на эту тематику.Представляем вам подборку из 10 фильмов для
+      программистов.</p>
+    <a href="https://itproger.com/news/1" target="_blank">
+     <button class="btn btn-warning">Посмотреть</button>
+    </a>
+{% endblock aside_news_section %}

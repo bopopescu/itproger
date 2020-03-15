@@ -113,3 +113,36 @@ function changeTitle(){
 }
 
 setInterval(changeTitle, 700);
+
+// Анимация
+//taks1
+$("#go-top").on("click",function(){
+  $("html, body").animate({scrollTop:0},500);
+})
+
+//task2
+//Мигающий текст
+function blink_text(){
+  $(".blink").fadeOut(500);
+  $(".blink").fadeIn(500);
+}
+
+setInterval(blink_text, 1000);
+
+//task3
+$(document).scroll(function(){
+  if($(document).width > 750){
+    if($(document).scrollTop() > $('header').height() + 10)
+    $('header').addClass("fixed");
+    else {
+      $('header').removeClass('fixed')
+    }
+  }
+});
+
+//task4
+$(".task4").on('click', function(){
+  $(this).slideUp(2000);
+});
+
+//task5
