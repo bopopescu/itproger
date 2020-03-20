@@ -6,19 +6,19 @@ from .models import Article
 
 news = [
     {
-        'title':'Наша первая запись',
+        'title': 'Наша первая запись',
         'text': 'Просто большой текст для 1 записи',
         'date': '1 января 2020',
         'author': "Виталий"
     },
     {
-        'title':'Наша вторая запись',
+        'title': 'Наша вторая запись',
         'text': 'Просто большой текст для 2 записи',
         'date': '15 января 2020',
         'author': "джон"
     },
     {
-        'title':'Наша 3 запись',
+        'title': 'Наша 3 запись',
         'text': 'Просто большой текст для 3 записи',
         'date': '15 января 2020',
         'author': ""
@@ -35,35 +35,29 @@ def home(request):
 
 
 def contacts(request):
-    return render(request, "blog/contacts.html", {'title':'Страничка про нас!'})
+    return render(request, "blog/contacts.html", {'title': 'Страничка про нас!'})
+
 
 def practice(request):
     data = {
-        "title":'Практика',
-        'hello_text':'Привет мир',
+        "title": 'Практика',
+        'hello_text': 'Привет мир',
         'id': 'practice'
     }
     return render(request, "blog/practice.html", data)
 
+
 def lessons(request):
     data = {
-        "title":'Lessons',
-        'hello_text':'Привет Lessons',
+        "title": 'Lessons',
+        'hello_text': 'Привет Lessons',
     }
     return render(request, 'blog/lessons.html', data)
 
+
 def about(request):
     data = {
-        "title":'About',
-        'hello_text2':'Привет About'
+        "title": 'About',
+        'hello_text2': 'Привет About'
     }
     return render(request, 'blog/about.html', data)
-
-class ArticleDetailsView(DetailView):
-    model = Article
-
-    slug_field = 'slug'
-
-    def get_context_data(self, **kwargs):
-        ctx = super(ArticleDetailsView, self).get_context_data(**kwargs)
-        ctx['title'] = Article.objects.filter(slug=self.kwargs['slug']).first()
