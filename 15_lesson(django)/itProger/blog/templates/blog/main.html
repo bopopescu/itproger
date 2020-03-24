@@ -30,6 +30,7 @@
 
     <div class="navbar-nav">
       {% if user.is_authenticated %}
+         <a href="{% url 'news-add' %}" class='btn btn-outline-secondary mr-3'>Добавить статью</a>
          <a href="{% url 'profile' %}" class='btn btn-outline-secondary mr-3'>Профиль пользователя: {{user.username}}</a>
          <a href="{% url 'exit' %}" class='btn btn-outline-secondary'>Выйти</a>
       {% else %}
@@ -67,6 +68,14 @@
       </aside>
     </div>
   </main>
-
+  <footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+    <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.4/getting-started/introduction/">getting started guide</a>.</p>
+  </div>
+</footer>
 </body>
 </html>

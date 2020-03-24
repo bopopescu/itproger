@@ -3,6 +3,8 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 from django.urls import reverse
 from .libs.slugify import slugify
+from django.urls import reverse
+
 
 # Create your models here.
 class News(models.Model):
@@ -10,6 +12,13 @@ class News(models.Model):
     text = models.TextField()
     date = models.DateTimeField(default=timezone.now)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        return reverse('news-detail', kwargs={'pk': self.pk})
+
 
 class Article(models.Model):
     slug = models.SlugField(
@@ -20,8 +29,7 @@ class Article(models.Model):
     )
 
     def get_absolute_url(self):
-        return reverse("new-detail", kwargs={'slug':self.slug})
-
+        return reverse("new-detail", kwargs={'slug': self.slug})
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.id)

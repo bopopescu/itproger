@@ -5,12 +5,12 @@ from .forms import UserOurRegistration, UserUpdateForm, ProfileEdit
 from django.contrib.auth.decorators import login_required
 
 
-def register(request):
+def register(request, **kwargs):
     if request.method == 'POST':
         form = UserOurRegistration(request.POST)
         print(form)
         if form.is_valid():
-            form.save()
+            form.save(**kwargs)
             username = form.cleaned_data.get('username')
             messages.success(request,
                              f'Аккаунт {username} был успешно создан!Введите имя пользователя и пароль для авторизации.')
@@ -21,14 +21,14 @@ def register(request):
 
 
 @login_required
-def showprofile(request):
+def showprofile(request, **kwargs):
     if request.method == "POST":
         edit_profile = ProfileEdit(request.POST, request.FILES, instance=request.user.profile)
         update_user = UserUpdateForm(request.POST, instance=request.user)
 
         if edit_profile.is_valid() and update_user.is_valid():
-            edit_profile.save()
-            update_user.save()
+            edit_profile.save(**kwargs)
+            update_user.save(**kwargs)
             messages.success(request, f'Аккаунт был успешно обновлен')
             return redirect('profile')
     else:

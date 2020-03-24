@@ -4,7 +4,7 @@
     {% for post in news %}
     <div class="alert alert-light">
       <h1>{{ post.title }}</h1>
-      <p>{{ post.text }}</p>
+      <p>{{ post.text|striptags|truncatechars:200 }}</p>
         <div class="row">
             <div>
               {% if post.author.profile.img.url %}
@@ -14,7 +14,7 @@
               {% endif %}
             </div>
             <div class="mt-2">
-                <span class="text-muted">{{ post.date|date:"j F Y, время: H:i:s" }}</span>
+                <span class="text-muted"><b>Дата: </b>{{ post.date|date:"d E Y в H:i:s" }}</span>
                 {% if post.author != '' %}
                   <p>Автор: <mark>{{ post.author }}</mark></p>
                 {% else %}
@@ -22,7 +22,7 @@
                 {% endif %}
             </div>
         </div>
-
+        <a href="{% url 'news-detail' post.id %}" class='btn btn-outline-warning mt-2'>Читать далее</a>
     </div>
     {% endfor %}
 {% endblock main_section%}
