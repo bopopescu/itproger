@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+body {
+  background: silver;
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  width: 80%;
+  margin-left:10%;
+  -webkit-box-shadow: 0px 11px 5px 0px rgba(227,227,227,1);
+  -moz-box-shadow: 0px 11px 5px 0px rgba(227,227,227,1);
+  box-shadow: 0px 11px 5px 0px rgba(227,227,227,1);
+  display: flex;
+  height: 15vh;
+}
+
+.main-header {
+  display: flex;
+  width: 40%;
+}
+.logo{
+  width: 20%;
+  justify-content: flex-start;
+}
+
+.logo-img {
+  width: 100%;
+  /* background-image: url("https://img2.freepng.ru/20180605/zvk/kisspng-cat-computer-icons-cat-fingers-5b17338fa50ce3.6757608315282471836761.jpg"); */
+}
+.logo-desc {
+  width: 15%;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+.logo-desc > p{
+  width: 100%;
+  margin: auto;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  margin-right: 10px;
+}
+.navigation > a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  margin-left: 20px;
+}
+.navigation > a:hover {
+  text-decoration: underline;
+}
+
+main {
+  height: 70vh;
+  display: flex;
+}
+.main-container {
+  width:80%;
+  margin-left: 10%;
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+  justify-content: center;
+}
+.auth-form{
+  border: 1px solid black;
+  display: flex;
+  text-align: start;
+  margin-top: 50px;
+}
+
+.auth-form p {
+  margin-top: 20px;
+}
+.auth-form input {
+  width: 90%;
+  height: 40px;
+  font-size: 30px;
+  margin-top: 10px;
+  padding: 0 10px;
+  border-radius: 10px;
+
+}
+.auth-form p label {
+  font-size: 30px;
+}
+.edit-user {
+     margin-top: 50px;
+}
+footer {
+  border-top: 2px solid silver;
+  height: 10vh;
+  background: black;
+  color: white;
+  display: flex;
+}
+.all-rights{
+  width: 50%;
+}
+.container {
+  width:80%;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+}
+.social-media {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+
+}
+.social-media > ul li{
+  display: inline;
+}
+.btn {
+  margin: 20px 0;
+  color: white;
+  background-color: #E57171;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+}

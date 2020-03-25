@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from .choises import GENDER_CHOICES
+from .choises import GENDER_CHOICES, TYPE_CHOICES
 from PIL import Image
 
 
@@ -9,6 +9,7 @@ class Profile(models.Model):
     img = models.ImageField(default='default.jpg', upload_to='user_images', verbose_name=u"Фото профиля")
     gender = models.IntegerField(choices=GENDER_CHOICES, default=1, verbose_name=u"Пол")
     agree = models.BooleanField(default=True, verbose_name=u"Соглашение про отправку уведомлений на почту")
+    account_type = models.CharField(choices=TYPE_CHOICES, default='Бесплатный пакет', max_length=50)
 
     def __str__(self):
         return f' Профайл пользователя {self.user.username}'

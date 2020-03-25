@@ -1,9 +1,12 @@
-from urllib import request
-
 from .models import Course, Lesson
 from django.views.generic import ListView, DetailView, CreateView
 from django.shortcuts import redirect
 from .forms import CreateCourseForm
+from django.shortcuts import render
+
+
+def tarrifs_page(request):
+    return render(request, 'courses/tarrifs.html', {'title': 'Тарифы на сайте'})
 
 
 class HomePage(ListView):
