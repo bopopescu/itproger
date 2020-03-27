@@ -13,7 +13,7 @@ class UserOurRegistration(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ['username', 'password1', 'email']  # 'choise']
+        fields = ['username', 'email', 'password1']  # 'choise']
 
 
 class UserUpdateForm(forms.ModelForm):

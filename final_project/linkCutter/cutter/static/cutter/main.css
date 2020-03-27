@@ -5,6 +5,12 @@
   padding: 0;
   outline: none;
 }
+a {
+  color: #E06149;
+}
+a:hover {
+  color: #B8DAE3;
+}
 body {
   background: #F6F6F6;
   font-family: 'Roboto', sans-serif;
@@ -103,25 +109,28 @@ main {
   padding: .7em 1.5em;
   outline: none;
   font-size: 20px;
+  border: 1px solid rgb(212,75,56);
+
 }
-.btn-home {
-  position: relative;
-  font-size: 20px;
-}
-.btn-home:active {
+
+.btn-home:active,
+.btn-exit:active {
   background: rgb(152,15,0);
 }
-.btn-home:hover {
+.btn-home:hover,
+.btn-exit:hover {
+  transition: all .3s linear;
+  transform: translateY(-5px);
   background-color: rgb(232,95,76);
   -webkit-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.75);
-  bottom: 10px;
  }
 /* ----------------------------Кабинет пользователя */
 .profile-form{
-  height: 99%;
+  height: 80%;
   margin-top: 30px;
+  overflow-y: hidden;
 }
 .profile-form h2 {
   font-size: 30px;
@@ -161,12 +170,24 @@ main {
 /* ----------------------------Форма авторизации пользователя */
 .auth-form {
   display: flex;
-  text-align: start;
-  margin-top: 50px;
+  height: 80%;
+  margin-top: 100px;
+}
+.auth-form div {
+  width: 80%;
+  margin-left: 10%;
+}
+.auth-form div > ul {
+  font-size: 14px;
+  margin-left: 40px;
+}
+.auth-form h2 {
+  font-size: 30px;
 }
 
 .auth-form p {
   margin-top: 20px;
+  text-align: left!important;
 }
 .auth-form input {
   width: 100%;
@@ -294,10 +315,26 @@ footer {
   display: inline;
 }
 .btn {
-  margin: 20px 0;
-  color: white;
-  background-color: #E57171;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 18px;
+  margin-top: 10px;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  user-select: none;
+  background-color: rgb(212,75,56);
+  padding: .7em 1.5em;
+  outline: none;
+  font-size: 20px;
+  border: 1px solid rgb(212,75,56);
 }
+.btn:active {
+  background: rgb(152,15,0);
+}
+.btn:hover {
+  transition: all .3s linear;
+  transform: translateY(-3px);
+  background-color: rgb(232,95,76);
+  -webkit-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.75);
+  position
+ }

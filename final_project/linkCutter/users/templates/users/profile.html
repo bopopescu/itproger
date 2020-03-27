@@ -7,7 +7,9 @@
         <strong>{{user.username}}</strong><br>
         <b>Email: </b> {{user.email}} <br>
         <p class='btn-exit-margin'>
-          <a class="btn-exit" href="{% url 'exit' %}">Выйти из кабинета</a>
+          <form action="{% url 'exit' %}" target="_blank">
+               <button class="btn-exit">Выйти из кабинета</button>
+          </form>
         </p>
     </div>
       <div class="edit-user">

@@ -6,9 +6,13 @@
     <p>Быстро сократим любую длинную ссылку для вашего проэкта</p>
     <div class='div-btn-home'>
       {% if user.is_authenticated %}
-        <a  class="btn-home" href="{% url 'profile' %}"><span>Личный кабинет</span></a>
+      <form action="{% url 'profile' %}" target="_blank">
+           <button class="btn-home">Кабинет пользователя</button>
+      </form>
       {% else %}
-        <a  class="btn-home" href="{% url 'profile' %}"><span>Личный кабинет</span></a>
+      <form action="{% url 'profile' %}" target="_blank">
+           <button class="btn-home">Кабинет пользователя</button>
+      </form>
       {% endif %}
     </div>
   </div>

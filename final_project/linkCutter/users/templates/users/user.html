@@ -2,17 +2,15 @@
 
 {% block  main_section %}
 <div class="container">
-  <div class="profile-form">
     <form class="auth-form" method="POST">
-        <div>
-          <h2>Форма авторизации пользователя</h2>
-          {% csrf_token %}
-          {{ form.as_p}}
-          <button type="submit" name="button" class="btn btn-outline-warning">Войти</button>
-        </div>
+      <div>
+        <h2>Форма авторизации пользователя</h2>
+        {% csrf_token %}
+        {{ form.as_p}}
+        <button type="submit" name="button" class="btn btn-outline-warning">Войти</button>
+      </div>
     </form>
-      <hr>
+      <!-- <hr> -->
       <!-- Забыли пароль? <a href="{% url 'pass-reset' %}">Получите новый</a> -->
   </div>
-</div>
 {% endblock main_section%}
