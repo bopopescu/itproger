@@ -1,0 +1,19 @@
+{% extends 'cutter/main-layout.html' %}
+{% block main_section %}
+<div class="container">
+  <div class='href-creation-form'>
+    <form class="href-create" method="POST">
+      <h2>Создание ссылок</h2>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class='btn'>Создать ссылку</button>
+    </form>
+    <div class="href-create">
+        <h2>Доступные ссылки</h2>
+        {% for url in users_urls %}
+          <p>Ссылка - <a href="{{ url.url }}" target="_blank">/link/{{ url.url_name }}</a></p>
+        {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

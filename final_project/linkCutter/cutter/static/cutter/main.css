@@ -6,7 +6,7 @@
   outline: none;
 }
 body {
-  background: silver;
+  background: #F6F6F6;
   font-family: 'Roboto', sans-serif;
 }
 header {
@@ -23,18 +23,26 @@ header {
   display: flex;
   width: 40%;
 }
-.logo{
-  width: 20%;
+.logo {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo a {
+  width: 100%;
+  height: 100%;
+}
+.logo-img {
+  height: 100%;
+}
+/* .logo{
+  width: 100%;
   justify-content: flex-start;
 }
-
-.logo-img {
-  width: 100%;
-  /* background-image: url("https://img2.freepng.ru/20180605/zvk/kisspng-cat-computer-icons-cat-fingers-5b17338fa50ce3.6757608315282471836761.jpg"); */
-}
+*/
 .logo-desc {
-  width: 15%;
-  font-size: 1.1em;
+  width: 40%;
+  font-size: 1.3em;
   display: flex;
   align-items: center;
 }
@@ -43,16 +51,16 @@ header {
   margin: auto;
 }
 .navigation {
+  margin-left: 5%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 50%;
-  margin-right: 10px;
 }
 .navigation > a {
   text-decoration: none;
   color: black;
-  font-size: 18px;
+  font-size: 20px;
   margin-left: 20px;
 }
 .navigation > a:hover {
@@ -60,7 +68,7 @@ header {
 }
 
 main {
-  height: 70vh;
+  height: 75vh;
   display: flex;
 }
 .main-container {
@@ -71,8 +79,87 @@ main {
   text-align: center;
   justify-content: center;
 }
-.auth-form{
+.home-container h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.home-container p {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.div-btn-home{
+  margin-top: 40px;
+}
+/* ---------------------------Кнопка на главной странице*/
+.btn-home,
+.btn-exit {
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  user-select: none;
+  background: rgb(212,75,56);
+  padding: .7em 1.5em;
+  outline: none;
+  font-size: 20px;
+}
+.btn-home {
+  position: relative;
+  font-size: 20px;
+}
+.btn-home:active {
+  background: rgb(152,15,0);
+}
+.btn-home:hover {
+  background-color: rgb(232,95,76);
+  -webkit-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.75);
+  bottom: 10px;
+ }
+/* ----------------------------Кабинет пользователя */
+.profile-form{
+  height: 99%;
+  margin-top: 30px;
+}
+.profile-form h2 {
+  font-size: 30px;
+}
+.profile-form-info{
+  margin: 20px 0px;
+  font-size: 20px;
+}
+.btn-exit-margin{
+  margin: 30px 0px;
+}
+.edit-user {
+     margin-top: 50px;
+}
+.edit-user h2 {
+     font-size: 30px;
+}
+.edit-form {
+  width: 70%;
+  margin-left: 15%;
+}
+.edit-form p {
+  margin: 10px 0;
+  text-align: left!important;
+}
+.edit-form p > input {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 15px 15px;
   border: 1px solid black;
+  border-radius: 5px;
+}
+.edit-form p > label {
+  font-size: 18px;
+}
+/* ----------------------------Форма авторизации пользователя */
+.auth-form {
   display: flex;
   text-align: start;
   margin-top: 50px;
@@ -82,20 +169,88 @@ main {
   margin-top: 20px;
 }
 .auth-form input {
-  width: 90%;
-  height: 40px;
-  font-size: 30px;
+  width: 100%;
   margin-top: 10px;
-  padding: 0 10px;
-  border-radius: 10px;
+  font-size: 16px;
+  padding: 15px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
 
 }
 .auth-form p label {
-  font-size: 30px;
+  font-size: 20px;
 }
-.edit-user {
-     margin-top: 50px;
+/* ----------------------------Форма регистрация пользователя */
+.form-registraion {
+  height: 100%;
+  text-align: left!important;
 }
+.form-registraion h2,
+.reg-yet {
+  margin: 20px;
+  text-align: center!important;
+}
+.form-registraion-data {
+  width: 50%;
+  margin-left: 25%;
+}
+.form-registraion-data >  p {
+  width:100%;
+  margin-top: 20px;
+}
+
+.form-registraion-data p > label {
+  font-size: 20px;
+}
+.form-registraion-data p > input {
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 15px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.form-registraion-data p > label, input {
+  width: 100%;
+}
+.form-registraion-data p > span {
+  width: 100%;
+  font-size: 14px;
+}
+.form-registraion-data ul {
+  font-size: 14px;
+  padding-left: 50px;
+  margin-top: 10px
+}
+/* ----------------------------Форма ссылок */
+.href-creation-form {
+  height: 100%;
+  width: 70%;
+}
+.href-create {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 30px;
+}
+.href-create p {
+  text-align: left;
+  margin-top: 20px;
+}
+.href-create p > label {
+  font-size: 18px;
+}
+.href-create p > input {
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 15px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+/* ----------------------------Страница exit*/
+.exit {
+  height: 90%;
+  margin-top: 20px;
+}
+/* ----------------------------Footer*/
 footer {
   border-top: 2px solid silver;
   height: 10vh;
@@ -103,14 +258,31 @@ footer {
   color: white;
   display: flex;
 }
+.container-footer{
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: auto;
+}
 .all-rights{
   width: 50%;
 }
 .container {
-  width:80%;
-  margin-left: 10%;
-  display: flex;
-  align-items: center;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      overflow: auto;
 }
 .social-media {
   width: 50%;
