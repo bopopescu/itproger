@@ -6,11 +6,11 @@
     <p>Быстро сократим любую длинную ссылку для вашего проэкта</p>
     <div class='div-btn-home'>
       {% if user.is_authenticated %}
-      <form action="{% url 'profile' %}" target="_blank">
+      <form action="{% url 'profile' %}" target="_self">
            <button class="btn-home">Кабинет пользователя</button>
       </form>
       {% else %}
-      <form action="{% url 'profile' %}" target="_blank">
+      <form action="{% url 'profile' %}" target="_self" name="">
            <button class="btn-home">Кабинет пользователя</button>
       </form>
       {% endif %}

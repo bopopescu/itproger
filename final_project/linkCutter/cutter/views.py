@@ -12,10 +12,6 @@ def about(request):
     return render(request, 'cutter/about.html', {'title': 'Про нас'})
 
 
-def hrefs(request):
-    return render(request, 'cutter/hrefs.html', {'title': 'Создание ссылок'})
-
-
 class HrefCreateView(LoginRequiredMixin, CreateView):
     model = Url
     template_name = 'cutter/hrefs.html'

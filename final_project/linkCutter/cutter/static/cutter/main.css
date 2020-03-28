@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 * {
   margin: 0;
@@ -24,15 +25,8 @@ header {
   display: flex;
   height: 15vh;
 }
-
-.main-header {
-  display: flex;
-  width: 40%;
-}
 .logo {
-  width: 40%;
-  display: flex;
-  flex-wrap: wrap;
+  width: 10%;
 }
 .logo a {
   width: 100%;
@@ -41,16 +35,12 @@ header {
 .logo-img {
   height: 100%;
 }
-/* .logo{
-  width: 100%;
-  justify-content: flex-start;
-}
-*/
 .logo-desc {
-  width: 40%;
+  width: 20%;
   font-size: 1.3em;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .logo-desc > p{
   width: 100%;
@@ -61,7 +51,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 50%;
+  width: 55%;
+  flex-wrap: wrap;
 }
 .navigation > a {
   text-decoration: none;
@@ -72,7 +63,7 @@ header {
 .navigation > a:hover {
   text-decoration: underline;
 }
-
+/*---------------------------------------Главный блок*/
 main {
   height: 75vh;
   display: flex;
@@ -130,7 +121,6 @@ main {
 .profile-form{
   height: 80%;
   margin-top: 30px;
-  overflow-y: hidden;
 }
 .profile-form h2 {
   font-size: 30px;
@@ -305,15 +295,7 @@ footer {
       justify-content: center;
       overflow: auto;
 }
-.social-media {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-
-}
-.social-media > ul li{
-  display: inline;
-}
+/*------------------------------------- Кнопки на сайте*/
 .btn {
   margin-top: 10px;
   color: #fff;
@@ -338,3 +320,56 @@ footer {
   box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.75);
   position
  }
+/*-------------------------------------Социальные сети*/
+.social-media{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: 80%;
+
+}
+.fa-2x {
+  padding-top: 8px;
+}
+.social-media div {
+  align-self: center;
+}
+.social a {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: #c1c1c1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 30px;
+    margin: 0 10px 10px 0;
+    color: #000;
+}
+.twitter a:hover {background: #00acee; color: #fff;}
+.vk a:hover {background: #5d84ae; color: #fff;}
+.youtube a:hover {background: #c4302b; color: #fff;}
+.telegram a:hover {background: #249bd7; color: #fff;}
+
+/* @media (max-width: 600px) {
+  .site-header {
+      flex-wrap: wrap;
+} */
+/*@media (max-width: 1000px){
+  .site-header{
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+}
+*/
+@media (max-width: 800px) {
+  .logo-desc {
+    display: none;
+  }
+  .main_container {
+    width: 100%;
+    margin:0;
+  }
+}
