@@ -5,8 +5,8 @@ from django.urls import reverse
 
 class Url(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=u"Имя пользователя")
-    url = models.CharField(max_length=200, verbose_name=u'Full Href')
-    url_name = models.CharField(max_length=50, verbose_name=u'Short url name', unique=True)
+    url = models.CharField(max_length=200, verbose_name=u'Длинная ссылка')
+    url_name = models.CharField(max_length=50, verbose_name=u'Сокращенная ссылка', unique=True)
 
     def __str__(self):
         return f' URL {self.url_name} от пользователя {self.user.username}'
